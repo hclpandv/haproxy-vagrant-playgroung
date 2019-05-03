@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
   #-----------------------------------------------------------
   config.vm.define "web2" do |web2|
     web2.vm.box = "bento/ubuntu-18.04"
-    web2.vm.hostname = 'web1'
+    web2.vm.hostname = 'web2'
     # Assigning IP:
     web2.vm.network "private_network", ip: "10.10.10.22"
     #------ Using Virtualbox provider for the exercise
